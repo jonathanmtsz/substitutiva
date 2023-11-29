@@ -20,7 +20,6 @@ export default function Home() {
         </form>
         <InfoFipe codigoFipe={codigoFipe}/>
       </div>
-
     </div>
   )
 }

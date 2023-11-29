@@ -48,6 +48,19 @@ function InfoFipe({ codigoFipe }: InfoFipeProps) {
         </div>
     );
   }
+
+  if(data.anoModelo != null) {
+        return(
+        <div>
+            <h1>Carro Encontrado</h1>
+        {Object.entries(data.anoModelo).map(([key, value]) => (
+          <div key={key}>
+            <p>{`${key}: ${value}`}</p>
+          </div>
+        ))}
+        </div>
+        );
+  }
     
 }
 
